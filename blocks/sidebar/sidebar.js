@@ -10,14 +10,32 @@ modules.define(
         Block
     ) {
 
-    var Sidebar = inherit(Block, {
+    /**
+     * @name Sidebar
+     * @constructor
+     */
+    var Sidebar = inherit(Block, /** @lends Sidebar.prototype */ {
         __constructor: function () {
             var base = 500;
             var square = Math.round(Math.pow(base, 0.5));
             var fact = faktorial(square);
             debugger;
+        },
+
+        /**
+         * @returns {Number}
+         */
+        getHeight: function () {
+            return 200;
+        },
+
+        /**
+         * @returns {String}
+         */
+        getTitle: function () {
+            return 'Hello World';
         }
-    }, {
+    }, /** @lends Sidebar */ {
         getBlockName: function () {
             return 'sidebar';
         }
