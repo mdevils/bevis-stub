@@ -7,6 +7,7 @@ modules.define(
 
     /**
      * @name EventEmitter
+     * @constructor
      */
     var EventEmitter = inherit({
         /**

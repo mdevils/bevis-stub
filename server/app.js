@@ -13,8 +13,12 @@ app
         req.path = req._parsedUrl.pathname;
         next();
     })
-    .use(assets.middleware())
     .use('/blocks', express.static(__dirname + '/../blocks'))
+    .use('/node_modules', express.static(__dirname + '/../node_modules'))
+    .use(assets.middleware())
+    .get('favicon.ico', function (req, res) {
+        res.end('');
+    })
     .use(app.router)
     .use(function (req, res) {
         res.statusCode = 404;

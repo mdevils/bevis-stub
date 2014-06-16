@@ -1,4 +1,6 @@
 - page
 - block
+- block: block
+  elem: auto-init
 - sidebar
 - layout

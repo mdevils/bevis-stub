@@ -3,6 +3,10 @@ modules.define(
     ['inherit', 'event-emitter', 'event-manager'],
     function (provide, inherit, EventEmitter, EventManager) {
 
+    /**
+     * @name BlockMixin
+     * @constructor
+     */
     var BlockMixin = inherit(EventEmitter, {
         __constructor: function (blockInstance, options) {
             this._block = blockInstance;

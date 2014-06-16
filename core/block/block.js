@@ -22,6 +22,10 @@ modules.define(
         extend
     ) {
 
+    /**
+     * @name Block
+     * @constructor
+     */
     var Block = inherit(EventEmitter, /** @lends Block.prototype */ {
         /**
          * Конструктор базового блока.

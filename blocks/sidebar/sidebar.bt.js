@@ -1,6 +1,7 @@
 module.exports = function (bt) {
 
     bt.match('sidebar', function (ctx) {
+        ctx.enableAutoInit();
         ctx.setContent([
             {
                 elem: 'head',

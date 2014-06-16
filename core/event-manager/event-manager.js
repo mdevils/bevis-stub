@@ -19,6 +19,8 @@ modules.define(
      *
      * Полезен, когда нужно отвязать все обработчики сразу. Например, при уничтожении объекта.
      *
+     * @name EventManager
+     * @constructor
      * @example
      * function UserView(model, el) {
      *     this._eventManager = new EventManager(this);

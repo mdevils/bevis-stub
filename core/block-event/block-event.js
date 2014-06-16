@@ -10,6 +10,9 @@ modules.define(
 
     /**
      * Класс, представляющий событие блока.
+     *
+     * @name BlockEvent
+     * @constructor
      */
     var BlockEvent = inherit({
         /**
