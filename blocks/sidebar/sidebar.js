@@ -66,6 +66,12 @@ modules.define(
     };
 
     var f = [];
+
+    /**
+     *
+     * @param {Number} n
+     * @returns {Number}
+     */
     function faktorial(n) {
         if (n == 0 || n == 1)
             return 1;
