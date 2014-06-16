@@ -17,8 +17,7 @@ modules.define(
     var Sidebar = inherit(Block, /** @lends Sidebar.prototype */ {
         __constructor: function () {
             var base = 500;
-            var square = Math.round(Math.pow(base, 0.5));
-            var fact = faktorial(square);
+            var fact = faktorial(Math.round(Math.pow(base, 0.5)));
             debugger;
         },
 
